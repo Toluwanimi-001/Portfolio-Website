@@ -3,90 +3,196 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Elegant Quote Generator</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500&display=swap" rel="stylesheet" />
+  <title>Toluwanimi's Portfolio</title>
+  <meta name="description" content="Personal portfolio of Toluwanimi - Frontend learner passionate about creativity and design" />
+  <meta name="author" content="Toluwanimi" />
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-  <div class="quote-container">
-    <h1>Quote Generator</h1>
-    <div class="quote-box fade" id="quoteBox">
-      <p id="quote">"Loading inspiration..."</p>
-      <span id="author">- Unknown</span>
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="nav-brand">Akinyemi Toluwanimi</a>
+      <button id="menu-toggle" class="menu-toggle"><i class="fas fa-bars"></i></button>
+      <nav class="nav-links" id="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
-    <button id="newQuote">New Quote</button>
+  </header>
+
+<section id="home" class="hero">
+  <div class="container hero-content">
+      <div class="hero-text">
+          <h1 class="hero-title">
+            <span class="typing-text">Hello, I'm Toluwanimi</span>
+          </h1>
+          <p class="hero-description scroll-reveal fade-up">
+              I'm a frontend developer passionate about creativity and design.
+          </p>
+          <a href="#projects" class="btn-primary shimmer-btn">View My Work</a>
+      </div>
+
+      <div class="hero-image">
+        <a href="#about" class="hero-image-link">
+          <img src="image.jpg" alt="Toluwanimi Akinyemi" />
+        </a>
+      </div>
   </div>
+</section>
+
+  <section id="about" class="about scroll-reveal fade-left">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <p class="about-text">
+       I’m a passionate frontend developer dedicated to crafting clean, elegant, and user-friendly web experiences.  
+       I enjoy transforming creative ideas into functional designs, continually learning and experimenting with new technologies.  
+       My focus is on building visually appealing websites that are both intuitive and effective.
+        </p>
+    </div>
+  </div>
+  </section>
+
+  <section id="projects" class="projects scroll-reveal fade-right">
+    <div class="container">
+      <h2 class="section-title">My Projects</h2>
+      <div class="projects-grid">
+        <a
+          href="https://your-live-quote-generator-link.com"
+          target="_blank"
+          class="project-card"
+        >
+          <h3>Quote Generator</h3>
+          <p>A simple and elegant random quote generator with a beautiful UI.</p>
+        </a>
+
+        <a
+          href="https://your-portfolio-link.com"
+          target="_blank"
+          class="project-card"
+        >
+          <h3>Portfolio Website</h3>
+          <p>My personal portfolio showcasing my skills, projects, and journey.</p>
+        </a>
+
+        <a
+          href="https://your-digital-clock-link.com"
+          target="_blank"
+          class="project-card"
+        >
+          <h3>Digital Clock</h3>
+          <p>A modern digital clock app with a clean design and real-time updates.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact scroll-reveal fade-up">
+    <div class="container">
+      <h2 class="section-title">Let's Connect!</h2>
+      <p class="contact-text">
+         I’m always open to questions,
+          collaborations, or a friendly chat.
+           Feel free to reach out!
+      </p>
+      <div class="contact-links">
+        <a
+          href="https://www.linkedin.com/in/toluwanimi-akinyemi-49a854340"
+          target="_blank"
+          class="contact-link"
+        >
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+        <a
+          href="https://api.whatsapp.com/send?phone=2349060335653"
+          target="_blank"
+          class="contact-link"
+        >
+          <i class="fab fa-whatsapp"></i> WhatsApp
+        </a>
+        <a href="mailto:toluwanimiakinyemi2@gmail.com" class="contact-link">
+          <i class="fas fa-envelope"></i> Email
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer scroll-reveal fade-up">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <h3 class="footer-logo">Akinyemi Toluwanimi</h3>
+        <p>
+          Frontend Developer | Creative & Passionate about Design
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-social">
+        <h4>Follow Me</h4>
+        <a href="https://www.linkedin.com/in/toluwanimi-akinyemi-49a854340" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/Toluwanimi-001" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://x.com/AkinyemiTo9623?t=YGHOJiOTKg_Zo-VzwV4W4Q&s=09" target="_blank"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> ZhalemCreates. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button id="backToTop"><i class="fas fa-arrow-up"></i></button>
 
   <script>
-    const quotes = [
-      { text: "The best way to get started is to quit talking and begin doing.", author: "Walt Disney" },
-      { text: "Don’t let yesterday take up too much of today.", author: "Will Rogers" },
-      { text: "It’s not whether you get knocked down, it’s whether you get up.", author: "Vince Lombardi" },
-      { text: "If you are working on something exciting, it will keep you motivated.", author: "Steve Jobs" },
-      { text: "Success is not in what you have, but who you are.", author: "Bo Bennett" },
-      { text: "Your limitation—it’s only your imagination.", author: "Unknown" },
-      { text: "Push yourself, because no one else is going to do it for you.", author: "Unknown" },
-      { text: "Sometimes later becomes never. Do it now.", author: "Unknown" },
-      { text: "Great things never come from comfort zones.", author: "Unknown" },
-      { text: "Dream it. Wish it. Do it.", author: "Unknown" },
-      { text: "Success doesn’t just find you. You have to go out and get it.", author: "Unknown" },
-      { text: "The harder you work for something, the greater you’ll feel when you achieve it.", author: "Unknown" },
-      { text: "Dream bigger. Do bigger.", author: "Unknown" },
-      { text: "Don’t watch the clock; do what it does. Keep going.", author: "Sam Levenson" },
-      { text: "Opportunities don’t happen. You create them.", author: "Chris Grosser" },
-      { text: "Sometimes we’re tested not to show our weaknesses, but to discover our strengths.", author: "Unknown" },
-      { text: "The key to success is to focus on goals, not obstacles.", author: "Unknown" },
-      { text: "Believe you can and you’re halfway there.", author: "Theodore Roosevelt" },
-      { text: "Do something today that your future self will thank you for.", author: "Sean Patrick Flanery" },
-      { text: "Don’t wait for opportunity. Create it.", author: "Unknown" },
-      { text: "Failure is not the opposite of success; it’s part of success.", author: "Arianna Huffington" },
-      { text: "If you want to fly, give up everything that weighs you down.", author: "Buddha" },
-      { text: "Discipline is doing what needs to be done, even when you don’t feel like doing it.", author: "Unknown" },
-      { text: "Hard work beats talent when talent doesn’t work hard.", author: "Tim Notke" },
-      { text: "Don’t limit your challenges. Challenge your limits.", author: "Jerry Dunn" },
-      { text: "You don’t need to be perfect to inspire others.", author: "Unknown" },
-      { text: "Little by little, day by day, what is meant for you will find its way.", author: "Unknown" },
-      { text: "Start where you are. Use what you have. Do what you can.", author: "Arthur Ashe" },
-      { text: "Act as if what you do makes a difference. It does.", author: "William James" },
-      { text: "Everything you’ve ever wanted is on the other side of fear.", author: "George Addair" },
-      { text: "You are never too old to set another goal or to dream a new dream.", author: "C.S. Lewis" },
-      { text: "Don’t be afraid to give up the good to go for the great.", author: "John D. Rockefeller" },
-      { text: "The secret of getting ahead is getting started.", author: "Mark Twain" },
-      { text: "Success is walking from failure to failure with no loss of enthusiasm.", author: "Winston Churchill" },
-      { text: "Do what you can, with what you have, where you are.", author: "Theodore Roosevelt" },
-      { text: "Be stubborn about your goals and flexible about your methods.", author: "Unknown" },
-      { text: "Stay humble. Work hard. Be kind.", author: "Unknown" },
-      { text: "Don’t count the days, make the days count.", author: "Muhammad Ali" },
-      { text: "The man who has confidence in himself gains the confidence of others.", author: "Hasidic Proverb" },
-      { text: "You don’t have to be great to start, but you have to start to be great.", author: "Zig Ziglar" },
-      { text: "Focus on being productive instead of busy.", author: "Tim Ferriss" },
-      { text: "Doubt kills more dreams than failure ever will.", author: "Suzy Kassem" },
-      { text: "Do it with passion or not at all.", author: "Rosa Nouchette Carey" },
-      { text: "You were born to be real, not to be perfect.", author: "Unknown" },
-      { text: "Work hard in silence, let your success be your noise.", author: "Frank Ocean" },
-      { text: "Keep your face always toward the sunshine—and shadows will fall behind you.", author: "Walt Whitman" },
-      { text: "Great things are done by a series of small things brought together.", author: "Vincent Van Gogh" },
-      { text: "Everything you can imagine is real.", author: "Pablo Picasso" },
-      { text: "Make each day your masterpiece.", author: "John Wooden" },
-      { text: "Stay hungry, stay foolish.", author: "Steve Jobs" }
-    ];
 
-    const quoteText = document.getElementById("quote");
-    const authorText = document.getElementById("author");
-    const quoteBox = document.getElementById("quoteBox");
-    const newQuoteBtn = document.getElementById("newQuote");
+    const menuToggle = document.getElementById("menu-toggle");
+    const navLinks = document.getElementById("nav-links");
+    menuToggle.addEventListener("click", () => {
+      navLinks.classList.toggle("open");
+      menuToggle.classList.toggle("open");
+    });
 
-    function newQuote() {
-      const random = quotes[Math.floor(Math.random() * quotes.length)];
-      quoteBox.classList.remove("fade");
-      void quoteBox.offsetWidth;
-      quoteBox.classList.add("fade");
-      quoteText.textContent = `"${random.text}"`;
-      authorText.textContent = `- ${random.author}`;
-    }
 
-    newQuoteBtn.addEventListener("click", newQuote);
-    window.onload = newQuote;
+    const backToTop = document.getElementById("backToTop");
+    window.addEventListener("scroll", () => {
+      backToTop.style.display = window.scrollY > 300 ? "block" : "none";
+    });
+    backToTop.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+    
+    const reveals = document.querySelectorAll(".scroll-reveal");
+    const revealOnScroll = () => {
+      for (let el of reveals) {
+        const top = el.getBoundingClientRect().top;
+        const visible = window.innerHeight - 100;
+        if (top < visible) el.classList.add("show");
+      }
+    };
+    window.addEventListener("scroll", revealOnScroll);
+    window.addEventListener("load", revealOnScroll);
   </script>
 </body>
 </html>
